@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;400;500&family=Montserrat:wght@300;400;500;600&display=swap');
 
 *{
     margin: 0px;
@@ -7,8 +8,9 @@
 
 body{
     font-size: 100%;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 500;
+    font-family: 'Kanit', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-weight: 300;
     background-color: #fff;
 }
 
@@ -30,6 +32,8 @@ body{
 .navbar ul{
    list-style-type: none;
    position: relative;
+   font-family: 'Montserrat', sans-serif;
+   font-weight: 400;
 }
 
 /* add right border */
@@ -193,25 +197,127 @@ body{
 
 /* main content */
 .main_content{
-    padding: 50px 0px;
+    padding: 50px 0px 0px;
     font-size: 1em;
-    font-weight: 500px;
-    color: #11331f;
+    font-weight: 300px;
+    /* color: #11331f; */
     display: flex;
     flex-direction: column;
     row-gap: 50px;
     margin-left: 200px;
+    letter-spacing: 1px;
 }
 
+/* CONTENT 0NE */
+.content1{
+    display: flex;
+    background-color: #200920;
+    color: #fff;
+    column-gap: 35px;
+    padding: 100px;
+    align-items: center;
+}
+
+.content11{
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+} 
+
+/* CONTENT TWO */
+
+.content2{
+    display: flex;
+    padding: 50px 100px;
+    gap: 50px;
+}
+
+.content21, .content22{
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+    
+}
+
+.content21_1, .content21_2, .content22_1, .content22_2{
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.4);
+    padding: 20px;
+}
+
+/* CONTENT THREE */
+
+.content3{
+    display: flex;
+    gap: 10px;
+    padding: 0px 100px;
+}
+
+.main1{
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.4);
+    padding: 20px;
+}
+
+/* button */
+
+.mospen{
+    background-color: #11331f;
+    text-align: center;
+    font-weight: 500;
+    padding: 10px;
+}
+
+.mospen a{
+    text-decoration: none;
+    color: #cecece;
+}
 /* ==================================
                         footer section ========================================== */
 .footer{
-    background-color: #504e50;
-    padding: 20px;
+    /* background-color: #504e50; */
+    /* padding: 20px; */
     display: flex;
     flex-direction: column;
     margin-left: 200px;
-    row-gap: 20px;
+    /* row-gap: 20px; */
+}
+
+/* first footer section */
+.sec_footer1, .sec_footer2{
+    display: flex;
+    padding: 50px;
+    /* background-color: #504e50; */
+}
+
+.sec_footer1{
+    background-color: #bad8c7;
+    gap: 20px;
+}
+
+.sec_footer2{
+    background-color: #200920;
+}
+
+.sec_footer1 ul{
+   list-style: none;
+}
+
+.sec_footer1 ul li{
+    border-bottom: 1px dotted rgba(26, 26, 26, 0.4);
+ }
+ 
+.sec_footer1 ul li a{
+    text-decoration: none;
+    color: #cecece;
+    display: block;
+    padding: 10px;
+}
+
+.sec_footer1 ul li a:hover{
+color: rgb(231, 186, 127);
+}
+
+.group:last-of-type{
+    align-self: flex-end;
 }
 
 .footer1 ul{
